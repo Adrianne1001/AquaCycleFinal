@@ -1,0 +1,52 @@
+.service {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+  }
+  
+  .service-item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+  }
+  
+   .service-item img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .service-item h3 {
+    margin: 0;
+    padding: 25px 15px 15px 15px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #00539C;
+  }
+  
+   .service-item p {
+    margin: 0;
+    padding: 0 25px 25px 25px;
+    font-size: 16px;
+  }
+  
+  .service-item a.btn {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    background: #FFD662;
+    transition: .3s;
+  }
+  
+   .service-item:hover a.btn {
+    color: #ffffff;
+    background: #007bff;
+  }
