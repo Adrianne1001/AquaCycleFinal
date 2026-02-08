@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\User;
+use App\Enums\Faculty;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -23,6 +24,7 @@ class UserFactory extends Factory
             'name' => fake()->name(),
             'year_level' => 2,
             'id_number' => "516960",
+            'faculty' => fake()->randomElement(Faculty::cases()),
             'email' => fake()->unique()->safeEmail(),
             'role' => "Student",
             'email_verified_at' => now(),

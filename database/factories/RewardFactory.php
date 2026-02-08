@@ -17,10 +17,10 @@ class RewardFactory extends Factory
     public function definition()
     {
         return [
-            'description' => fake() -> words(),
-            'image_url' => fake() -> imageUrl(),
-            'avail_qty' => fake() -> numberBetween(30,50),
-            'points_required' => fake() -> numberBetween(40,60),
+            'description' => fake()->words(3, true),
+            'image_url' => 'https://via.placeholder.com/400x300?text=' . fake()->word(),
+            'avail_qty' => fake()->numberBetween(30, 50),
+            'points_required' => fake()->numberBetween(40, 60),
             'status' => "Available"
         ];
     }

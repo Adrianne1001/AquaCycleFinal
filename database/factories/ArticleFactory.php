@@ -17,13 +17,13 @@ class ArticleFactory extends Factory
     public function definition()
     {
         return [
-            'title' => fake()->realText('25'),
-            'intro' => fake()->realText('200'),
-            'body' => fake()->realText('300'),
-            'conclusion' => fake()->realText('150'),
+            'title' => fake()->sentence(6),
+            'intro' => fake()->paragraph(3),
+            'body' => fake()->paragraph(5),
+            'conclusion' => fake()->paragraph(2),
             'reference' => fake()->unique()->url(),  
             'author' => fake()->name(), 
-            'image_url' => fake()->imageUrl(640, 480, 'nature', true, 'plastic waste'),
+            'image_url' => 'https://via.placeholder.com/640x480?text=' . fake()->word(),
         ];
     }
 
